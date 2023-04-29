@@ -40,10 +40,12 @@ fun main() {
 
             // 순서가 틀리면 안됌
 
+            // HEADER
             printer.println("HTTP/1.1 200 OK")
             printer.println("Content-Type: text/html\r\n")
 
-            printer.println("<h1>Hello World</h1>")
+            // BODY
+            printer.println("{}")
             printer.println("\r\n")
 
             // 배출 -> 데이터 전송이 완료되면, flush() 메서드를 사용하여 출력 버퍼를 비우고
